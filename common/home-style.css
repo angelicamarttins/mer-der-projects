@@ -1,0 +1,39 @@
+.section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.article {
+  background-color: var(--white-color);
+  border-radius: 0.5rem;
+}
+
+.article-image {
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.project-info {
+  padding: 0.5rem;
+}
+
+.project-title {
+  font-size: 1.5rem;
+}
+
+.project-description {
+  font-size: 0.9rem;
+}
+
+@media (min-width: 600px) and (max-width: 1199px) {
+  .section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 599px) {
+  .section {
+    grid-template-columns: 0.75fr;
+  }
+}
