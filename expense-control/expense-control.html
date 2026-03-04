@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../common/style/style.css">
+  <link rel="stylesheet" href="../common/style/style-reset.css">
+  <link rel="stylesheet" href="./expense-control-style.css">
+  <title>Expense Control</title>
+</head>
+<body>
+  <main class="main main-expense-control">
+    <h1>Expense Control</h1>
+
+    <div class="der">
+      <h2>DER</h2>
+      <iframe 
+      src="./expense-control-der.html" 
+      id="der-iframe"
+      frameborder="0"></iframe>
+    </div>
+  </main>
+
+  <script>
+    const iframe = document.getElementById('der-iframe');
+    
+    iframe.onload = function() {
+      setTimeout(() => {
+        const height = iframe.contentWindow.document.documentElement.scrollHeight;
+        iframe.style.height = height + 'px';
+      }, 100);
+    };
+  </script>
+</body>
+</html>

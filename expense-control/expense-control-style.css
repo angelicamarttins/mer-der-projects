@@ -1,0 +1,23 @@
+.main-expense-control {
+  width: 1000px;
+  height: 75vh;
+}
+
+.der {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.der iframe {
+  width: 100%;
+  height: auto;
+  display: block;
+  box-sizing: content-box;
+}
+
+.mermaid {
+  text-align: center;
+}

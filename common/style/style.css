@@ -10,20 +10,22 @@ body {
   font-optical-sizing: auto;
   font-weight: var(--font-light);
   font-style: normal;
-  background-color: var(--primary-color);
   color: var(--second-color);
+  background-color: var(--gray-color);
 }
 
 .main {
+  background-color: var(--primary-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
   max-width: 50rem;
-  height: 100vh;
-  border: 1px solid;
-  margin: 1rem;
+  margin: 0 1rem;
+  padding: 3rem;
+  border-radius: 1rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .title {
