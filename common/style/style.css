@@ -23,6 +23,7 @@ body {
   max-width: 50rem;
   height: 100vh;
   border: 1px solid;
+  margin: 1rem;
 }
 
 .title {

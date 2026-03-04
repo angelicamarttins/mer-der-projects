@@ -1,11 +1,16 @@
+.general-description {
+  text-align: center;
+}
+
 .section {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 2rem;
+  max-width: 400px;
 }
 
 .article {
-  background-color: var(--white-color);
+  background-color: var(--gray-color);
   border-radius: 0.5rem;
 }
 
@@ -28,12 +33,12 @@
 
 @media (min-width: 600px) and (max-width: 1199px) {
   .section {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 599px) {
   .section {
-    grid-template-columns: 0.75fr;
+    grid-template-columns: 1fr;
   }
 }
