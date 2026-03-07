@@ -10,7 +10,7 @@ body {
   font-optical-sizing: auto;
   font-weight: var(--font-light);
   font-style: normal;
-  color: var(--second-color);
+  color: var(--secondary-color);
   background-color: var(--gray-color);
 }
 
@@ -30,4 +30,60 @@ body {
 
 .title {
   font-size: 3rem;
+}
+
+.home-button {
+  border: none;
+  background-color: var(--gray-color);
+  border-radius: 0.5rem;
+  color: var(--mermaid-color);
+  font-weight: var(--font-semibold);
+  padding: 0.5rem;
+  box-shadow: var(--button-shadow) 0rem 0.5rem 1.5rem;
+}
+
+@keyframes bounce-letter {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.home-button:hover {
+  cursor: pointer;
+}
+
+.home-button span {
+  display: inline-block;
+}
+
+.home-button:hover span {
+  animation: bounce-letter 0.5s ease-in-out infinite;
+}
+
+.home-button:hover span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.home-button:hover span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.home-button:hover span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.home-button:hover span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.github-link {
+  color: var(--mermaid-color);
+  font-weight: var(--font-bold);
+}
+
+.github-link:hover {
+  color: var(--mermaid-color-hover);
 }

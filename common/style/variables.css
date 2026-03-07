@@ -1,10 +1,14 @@
 :root {
   --primary-color: #BFD1D1;
-  --second-color: #383838;
+  --secondary-color: #383838;
   --gray-color: #e0dddd;
+  --mermaid-color: #E0095F;
+  --mermaid-color-hover: #e0095fb6;
 
   --font-family: "Montserrat", sans-serif;
   --font-light: 300;
   --font-semibold: 500;
-  --font-bolf: 900;
+  --font-bold: 700;
+
+  --button-shadow: rgba(149, 157, 165, 0.2);
 }

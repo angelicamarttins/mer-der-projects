@@ -31,6 +31,11 @@
   font-size: 0.9rem;
 }
 
+.general-description-mermaid {
+  font-weight: var(--font-bold);
+  color: var(--mermaid-color);
+}
+
 @media (min-width: 600px) and (max-width: 1199px) {
   .section {
     grid-template-columns: 1fr;

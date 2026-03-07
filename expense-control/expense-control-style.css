@@ -12,12 +12,15 @@
 }
 
 .der iframe {
-  width: 100%;
-  height: auto;
-  display: block;
+  width: 200%;
   box-sizing: content-box;
 }
 
 .mermaid {
+  text-align: center;
+}
+
+.expense-control-description {
+  max-width: 50%;
   text-align: center;
 }
