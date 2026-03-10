@@ -36,6 +36,10 @@
   color: var(--mermaid-color);
 }
 
+.general-description-mermaid:hover {
+  color: var(--mermaid-color-hover);
+}
+
 @media (min-width: 600px) and (max-width: 1199px) {
   .section {
     grid-template-columns: 1fr;
