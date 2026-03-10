@@ -10,7 +10,24 @@
     <pre class="mermaid">
     erDiagram
       direction LR
-      EXPENSE |{--|| CATEGORY : needs
+      EXPENSE |{--|| CATEGORY : requires
+        EXPENSE {
+          uuid expense_id PK
+          string description
+          int value
+          date created_at
+          date updated_at
+          date deleted_at
+          uuid category_id FK
+        }
+        CATEGORY {
+          uuid category_id PK, FK
+          string category_name
+          boolean default_category
+          date created_at
+          date updated_at
+          date deleted_at
+        }
   </pre>
   <script src="expense-control-der-import.js" type="module"></script>
 </body>

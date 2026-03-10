@@ -1,8 +1,3 @@
-.main-expense-control {
-  width: 1000px;
-  height: 75vh;
-}
-
 .der {
   display: flex;
   justify-content: center;
@@ -14,6 +9,7 @@
 .der iframe {
   width: 200%;
   box-sizing: content-box;
+  height: 40vh;
 }
 
 .mermaid {
