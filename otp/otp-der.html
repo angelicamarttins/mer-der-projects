@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./otp-style.css">
+  <title>Expense Control</title>
+</head>
+<body>
+    <pre class="mermaid">
+    erDiagram
+      direction LR
+      OTP |{--|| USERS : requires
+        OTP {
+          uuid otp_id PK
+          uuid user_id FK
+          int  value
+          int  otp_retries
+          date expires_at
+          date created_at
+          date updated_at
+          date consumed_at
+        }
+        USERS {
+          uuid user_id PK, FK
+          string first_name
+          string last_name
+          string email
+          string password
+          int login_retries
+          date created_at
+          date updated_at
+          date deleted_at
+        }
+  </pre>
+  <script src="otp-der-import.js" type="module"></script>
+</body>
+</html>

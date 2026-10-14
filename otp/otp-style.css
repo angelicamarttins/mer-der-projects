@@ -1,0 +1,26 @@
+.main-expense-control {
+  width: 120%;
+}
+
+.der {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.der iframe {
+  width: 200%;
+  box-sizing: content-box;
+  height:50vh;
+}
+
+.mermaid {
+  text-align: center;
+}
+
+.expense-control-description {
+  max-width: 50%;
+  text-align: center;
+}
